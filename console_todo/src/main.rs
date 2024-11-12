@@ -91,8 +91,7 @@ impl Widget for &AppState {
             "Value: ".into(),
             self.counter.to_string().yellow(),
         ])]);
-
-        Paragraph::new(counter_text).centered().block(block).render(area, buf);
+        Paragraph::new(counter_text).left_aligned().block(block).render(area, buf);
     }
 }
 
